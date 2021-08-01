@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>ToDo(JS)</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>テストです</p>
+    <div class="input-area">
+      <input id="add-text" placeholder="ToDoを入力" />
+      <!--何を入力するか-->
+      <button id="add-button">追加</button>
+      <!--idは一意であれば何でもよい-->
+    </div>
+    <div class="incomplete-area">
+      <p class="title">未完了のToDo</p>
+      <!--何のエリアか-->
+      <ul id="incomplete-list">
+        <!--リストを並べる-->
+        <!-- <div class="list-row"> -->
+        <!--後でcssで調整したいから-->
+        <!-- <li>ToDoです</li> -->
+        <!--※アンチパターン。本来はliの中にdiv-->
+        <!-- <button id="complete-button">完了</button> -->
+        <!-- <button>削除</button> -->
+        <!-- </div> -->
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">完了したToDo</p>
+      <ul id="complete-list">
+        <!-- <div class="list-row">
+          <li>ToDoでした</li>
+          <button>戻す</button>
+        </div> -->
+      </ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
